@@ -3,6 +3,7 @@ package com.ir.demo.models;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "words")
 public class Word {
 
     @Id

@@ -1,5 +1,9 @@
 package com.ir.demo.controllers;
 
+import com.ir.demo.models.File;
+import com.ir.demo.models.TextInfo;
+import com.ir.demo.service.FileServiceNew;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -13,6 +17,10 @@ import java.nio.file.Paths;
 @Controller
 @RequestMapping("uploadFiles")
 public class UploadController {
+
+    @Autowired
+    private FileServiceNew fileServiceNew;
+
 
     //Save the uploaded file to this folder
     private static String UPLOADED_FOLDER = "E:\\github-project\\ir-new-project\\src\\uploads\\";
@@ -36,6 +44,8 @@ public class UploadController {
             Path path = Paths.get(UPLOADED_FOLDER + file.getOriginalFilename());
             Files.write(path, bytes);
 
+            addFile(file.getOriginalFilename());
+
             redirectAttributes.addFlashAttribute("message",
                     "You successfully uploaded '" + file.getOriginalFilename() + "'");
 
@@ -49,6 +59,13 @@ public class UploadController {
     @GetMapping("/uploadStatus")
     public String uploadStatus() {
         return "uploadStatus";
+    }
+
+
+    public void addFile(String name) {
+        File file = new File();
+        file.setName(name);
+        fileServiceNew.insert(file);
     }
 
 }
