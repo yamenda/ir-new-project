@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2386da1b-f368-4d45-a818-db981e69e5fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/rita.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/AnalyzeText.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ir/demo/models/TextInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/allfiles.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/fileinfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ir/demo/controllers/UploadController.class" afterPath="$PROJECT_DIR$/target/classes/com/ir/demo/controllers/UploadController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/irProject.iml" afterPath="$PROJECT_DIR$/irProject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/UploadController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/UploadController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/index.html" afterPath="$PROJECT_DIR$/target/classes/static/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/AnalyzeText.java" afterPath="$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/AnalyzeText.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/fileinfo.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fileinfo.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,12 +29,14 @@
       <file leaf-file-name="AnalyzeText.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/AnalyzeText.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="51" column="26" lean-forward="false" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="58" column="59" lean-forward="true" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#filesName#0;class#AnalyzeText#0" expanded="false" />
                 <element signature="method#readLines#0;class#AnalyzeText#0" expanded="false" />
                 <element signature="method#removeStopWords#0;class#AnalyzeText#0" expanded="false" />
+                <element signature="method#getStemming#0;class#AnalyzeText#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -63,8 +55,8 @@
       <file leaf-file-name="fileinfo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fileinfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="21" column="62" lean-forward="false" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+            <state relative-caret-position="290">
+              <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -105,8 +97,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fileInfo.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/allfiles.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/AnalyzeText.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fileinfo.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/AnalyzeText.java" />
       </list>
     </option>
   </component>
@@ -305,12 +297,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524432993665</updated>
       <workItem from="1524432999517" duration="5304000" />
-      <workItem from="1524500785758" duration="7479000" />
+      <workItem from="1524500785758" duration="8173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12783000" />
+    <option name="totallyTimeSpent" value="13477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -414,18 +406,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/AnalyzeText.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/AnalyzeText.java</url>
-          <line>65</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/AnalyzeText.java</url>
           <line>28</line>
           <properties />
           <option name="timeStamp" value="12" />
@@ -450,18 +430,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/AnalyzeText.java</url>
-          <line>55</line>
+          <line>53</line>
           <properties />
-          <option name="timeStamp" value="30" />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/AnalyzeText.java</url>
-          <line>51</line>
+          <line>58</line>
           <properties />
-          <option name="timeStamp" value="31" />
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="32" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -616,14 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fileinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="21" column="62" lean-forward="false" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/allfiles.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -632,14 +604,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fileinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ir/demo/controllers/AnalyzeText.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="51" column="26" lean-forward="false" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        <state relative-caret-position="221">
+          <caret line="58" column="59" lean-forward="true" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#filesName#0;class#AnalyzeText#0" expanded="false" />
             <element signature="method#readLines#0;class#AnalyzeText#0" expanded="false" />
             <element signature="method#removeStopWords#0;class#AnalyzeText#0" expanded="false" />
+            <element signature="method#getStemming#0;class#AnalyzeText#0" expanded="false" />
           </folding>
         </state>
       </provider>

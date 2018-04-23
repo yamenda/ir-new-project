@@ -51,10 +51,12 @@ public class AnalyzeText {
 
         List<String> withOutStopWords = removeStopWords(tokenize);
 
+        List<String> stemmingArray = getStemming(withOutStopWords);
+
         model.addAttribute("filetext", tFile.getText());
         model.addAttribute("tokesArray", tFile.getTokensArray());
         model.addAttribute("wothOutStopWords", withOutStopWords);
-
+        model.addAttribute("stemmingArray", stemmingArray);
 
         return "fileinfo";
     }
@@ -100,4 +102,14 @@ public class AnalyzeText {
 
         return list;
     }
+
+    public List<String> getStemming(List<String> texts) {
+        List<String> list = new ArrayList<>();
+
+        for (String s: texts) {
+            list.add(RiTa.stem(s));
+        }
+        return list;
+    }
+
 }

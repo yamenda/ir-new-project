@@ -23,5 +23,11 @@
     </span>
 </div>
 
+<h2>Words After Stemming: </h2>
+<div th:if="${stemmingArray}">
+    <span th:each="word : ${stemmingArray}" th:text="'word:' + ${word}">
+    </span>
+</div>
+
 </body>
 </html>
