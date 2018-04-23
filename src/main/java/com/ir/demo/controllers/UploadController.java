@@ -15,7 +15,7 @@ import java.nio.file.Paths;
 public class UploadController {
 
     //Save the uploaded file to this folder
-    private static String UPLOADED_FOLDER = "E:\\github-project\\irProject\\src\\uploads\\";
+    private static String UPLOADED_FOLDER = "E:\\github-project\\ir-new-project\\src\\uploads\\";
 
     @GetMapping("/")
     public String index() {

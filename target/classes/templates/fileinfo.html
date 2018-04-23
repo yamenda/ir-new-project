@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>File Info</title>
+</head>
+<body>
+
+
+<div th:if="${filetext}">
+    <h1>File Text.</h1>
+    <p th:text="${filetext}"></p>
+</div>
+
+<h2>Tokenization Array: </h2>
+<div th:if="${tokesArray}">
+    <span th:each="token : ${tokesArray}" th:text="'word:' + ${token}">
+    </span>
+</div>
+
+<h2>With Out Stop Words Array: </h2>
+<div th:if="${wothOutStopWords}">
+    <span th:each="word : ${wothOutStopWords}" th:text="'word:' + ${word}">
+    </span>
+</div>
+
+</body>
+</html>

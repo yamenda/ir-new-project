@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>File Info</title>
+</head>
+<body>
+
+
+<div th:if="${files}">
+    <div>
+        <ul>
+            <li th:each="file : ${files}">
+                <a th:href="@{'/analyzeText/file/' + ${file}}" th:text="${file}" />
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
