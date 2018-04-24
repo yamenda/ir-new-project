@@ -22,6 +22,18 @@ public class FileServiceNew {
         return IterableConverter.toList(this.fileRepository.findAll());
     }
 
+    public File findByName(String name) {
+
+        List<File> list = getAll();
+
+        for (File f: list) {
+            if(f.getName().equals(name)) {
+                return f;
+            }
+        }
+        return null;
+    }
+
     public File find(Integer id) {
         return this.fileRepository.findOne(id);
     }
